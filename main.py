@@ -16,7 +16,7 @@ def process_csv(file):
     return fund_manager_counts
 
 # Streamlit app
-st.title("Manager Counter")
+st.title("Manager counter")
 
 # File uploader
 uploaded_file = st.file_uploader("Upload your CSV file", type="csv")
