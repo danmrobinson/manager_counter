@@ -18,7 +18,7 @@ def process_csv(file):
 # Streamlit app
 st.title("Manager Counter")
 
-st.write("This app takes a CSV file of deals and counts the number of unique fund managers for each investment. It takes the default fund manager column as input (ie the comma separated column version).")
+st.write("This app takes a CSV file of deals and counts the number of unique instances of a fund manager and a deal. It takes the default fund manager column (Fundraising investors - Fund manager) as input (the comma separated version).")
 
 # File uploader
 uploaded_file = st.file_uploader("Upload your CSV file", type="csv")
