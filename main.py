@@ -2,6 +2,13 @@ import streamlit as st
 import pandas as pd
 from io import StringIO
 
+st.set_page_config(page_icon="🙋‍♀️", page_title="The Manager Counter")
+
+st.image(
+	"https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f64b.svg",
+	width=100,
+)
+
 # Function to process the uploaded CSV and generate the counts and sums for unique fund managers
 def process_csv(file, fund_manager_col, amount_col):
     try:
@@ -32,9 +39,6 @@ def process_csv(file, fund_manager_col, amount_col):
     fund_manager_counts.columns = ['Fund manager', 'Participation count', 'Total amount raised']
 
     return fund_manager_counts
-
-# Streamlit app
-st.title("Fund Manager Participation Counter")
 
 st.write(
     """
