@@ -9,6 +9,8 @@ st.image(
 	width=100,
 )
 
+st.title("Manager Counter")
+
 # Function to process the uploaded CSV and generate the counts and sums for unique fund managers
 def process_csv(file, fund_manager_col, amount_col):
     try:
